@@ -1,0 +1,284 @@
+#body-header{
+	background-image: url(macbook_mouse.jpg);
+	background-size: auto;
+	background-attachment: fixed;
+	opacity: 0.8;
+	background-position: center;
+	height: 70vh;
+}
+.horizontal-list{
+
+	  padding-left: 0px;
+	  list-style: none;
+	  margin: 0px;
+}
+.horizontal-list li{
+	display: inline-block;
+	margin:20px 8px;
+
+	}
+.horizontal-list li a{
+	color: white;
+	text-decoration: none;
+}
+.horizontal-list li a:hover{
+	color: blue;
+	
+}
+.text-center{
+	text-align: center;
+}
+#my-name
+{
+	font-size: 5rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+#name-socialicons{
+	margin-top: 20vh;
+}
+
+.social-icons li {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border-color: white;
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+
+}
+
+#parag{
+
+	   margin-left: 20vw;
+	   margin-right: 20vw;
+	   font-size: 15px;
+	   font-weight:400;
+	   line-height: 1.8;
+	   word-spacing: 2px;
+
+}
+section{
+
+	  
+	  width: 100%;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+
+section:nth-child(2n)
+{
+	 background-color: #9e9b9b29;
+}
+section:nth-child(2n+1)
+{
+	 background-color: white;
+}
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+
+.skills-display {
+    width: 70%;
+    /*height: 100px;*/
+    /*border: 2px solid black; 	*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill-progress{
+
+height: 1.5rem;
+width: 7rem;
+background-color: lightgrey;
+border-radius: 0.8rem;
+
+}
+.skill-progress>div{
+	  border-radius: 20px 0px 0px 20px;
+
+}
+.skill-name{
+	margin-left: 15px;
+	color: white;
+	font-size: 1rem;
+}
+.eightyfiveprcnt{
+
+
+	    height: inherit;
+	    width: 85%;
+}
+.mb-blue{
+
+    
+	background-color: #2857a4;
+}
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 50px;
+    margin-bottom: 2%;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    /* display: none; */
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+    /* background-color: white; */
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    /* display: block; */
+    color: white;
+}
+.timeline {
+    position: relative;
+    width: 75%;
+    border: 2px solid black;
+
+}
+
+
+.timeline-box {
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -13%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    z-index: 1;
+
+}
+
+
+.timeline-box:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -13%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    z-index: 1;
+}
+
+.timeline-divider {
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+    padding: 0px;
+}
+
+
+.timeline-traveller {
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+@media screen and (max-width:900px){
+	.timeline-box{
+		left:8% !important;
+		width: 80%;
+	}
+	.timeline-divider{
+     left: 2%;
+	}
+	.timeline-box::after{
+		left:-10% !important;
+
+	}
+	
+}
